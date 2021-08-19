@@ -15,7 +15,14 @@ def calc_distance(corner: tuple[int, int]) -> int:
 # Gibt es eine schönere Alternative für diese Signatur:
 # corners: tuple[tuple[int, int], tuple[int, int], tuple[int, int], tuple[int, int]]
 def closest_corner_distance(corners) -> float:
-    return 0
+    closest_distance = False
+    
+    for c in corners:
+        dist = calc_distance(c)
+        if (not closest_distance) or (dist < closest_distance):
+            closest_distance = dist
+    
+    return closest_distance
 
 
 def max_height(distance: float) -> int:
