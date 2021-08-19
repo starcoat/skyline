@@ -1,3 +1,6 @@
+import math
+
+
 buildings = [
     ((-80,100), (-20,100), (-20,160), (-80,160)),
     ((60,160), (120,60), (120,250), (60,250)),
@@ -6,7 +9,7 @@ buildings = [
 
 
 def calc_distance(corner: tuple[int, int]) -> int:
-    return 0
+    return math.sqrt(pow(corner[0], 2) + pow(corner[1], 2))
 
 
 # Gibt es eine schönere Alternative für diese Signatur:
