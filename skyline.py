@@ -27,3 +27,7 @@ def closest_corner_distance(corners) -> float:
 
 def max_height(distance: float) -> int:
     return 100 + math.floor(distance) // 100
+
+
+for b in buildings:
+    print(max_height(closest_corner_distance(b)))
