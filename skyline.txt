@@ -21,7 +21,8 @@ calcDistance(corner) {
 }
 
 
-maxHeight() {
+maxHeight(distance) {
+    return 100 + <Round>(distance) % 100;
 }
 
 
