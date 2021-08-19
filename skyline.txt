@@ -1,7 +1,18 @@
 buildings: <List> of <Tuple> of <Tuple>
 
 
-findClosestCorner() {
+closestCorner(corners) {
+    closestDistance = <Null>;
+
+    foreach corners as c {
+        dist = calcDistance(c);
+        if ((NOT closestDistance) OR (dist < closestDistance)) {
+            closestDistance = dist;
+            closest = c;
+        }
+    }
+
+    <Return> closest;
 }
 
 
@@ -14,7 +25,7 @@ maxHeight() {
 
 
 foreach buildings as b {
-    findClosestCorner();
+    closestCorner(b);
     calcDistance();
     <Output> maxHeight();
 }
