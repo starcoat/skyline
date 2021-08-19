@@ -16,7 +16,8 @@ closestCorner(corners) {
 }
 
 
-calcDistance() {
+calcDistance(corner) {
+    <Return> sqrt(corner[0]^2 + corner[1]^2);
 }
 
 
