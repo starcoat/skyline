@@ -12,7 +12,7 @@ closestCorner(corners) {
         }
     }
 
-    <Return> closest;
+    <Return> closestDistance;
 }
 
 
@@ -26,7 +26,5 @@ maxHeight() {
 
 
 foreach buildings as b {
-    closestCorner(b);
-    calcDistance();
-    <Output> maxHeight();
+    <Output> maxHeight(closestCorner(b));
 }
