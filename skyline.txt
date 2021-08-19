@@ -1,3 +1,6 @@
+buildings: <List> of <Tuples>;
+
+
 findClosestCorner() {
 }
 
@@ -10,7 +13,7 @@ maxHeight() {
 }
 
 
-foreach <Building> in <List> {
+foreach buildings as b {
     findClosestCorner();
     calcDistance();
     <Output> maxHeight();
