@@ -1,0 +1,6 @@
+foreach <Building> in <List> {
+    <Find corner closest to Needle>;
+    <Calculate distance>;
+    <Translate distance to allowed max height>;
+    <Output max height>;
+}
